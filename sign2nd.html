@@ -1,0 +1,78 @@
+<html>
+<body background="signin1.jpg">
+	<center>
+		<div>
+   <h1>Choose a password</h1> 
+   <h4>For security,your password must be 6 characters or more.</h4>
+   <input type="password" id="p1"><br>
+   <input type="checkbox" id="chk1">   <label>Remember password</label>
+   <input type="button" onclick="signin()" value="Next">
+</div>
+</center>
+<style type="text/css">
+	input[type=password]{
+       width: 270px;
+       padding: 12px 20px;
+       margin: 8px 0;
+       box-sizing: border-box;
+       border: 1px solid #f0f;
+       outline: none;
+       color: #555;
+   	}
+   	h1{
+   		color: #fff;
+   	}
+   	h4{
+		color: #555;
+	}
+	div{
+   		background-color: black;
+   		width: 300px;
+   		border: 15px;
+        padding: 50px;
+        margin: 20px;
+        box-shadow: 1px 1px #444;
+        height: 600px;
+   	}
+   	input[type=checkbox]
+   	{
+
+       padding: 12px 20px;
+       margin: 8px 0;
+       box-sizing: border-box;
+       border: 1px solid #f0f;
+       outline: none;
+       color: #555;
+   	}
+   	label{
+   		color: #fff;
+   		  padding: 12px 20px;
+       margin: 8px 0;
+       box-sizing: border-box;
+      
+       outline: none;
+   	}
+   	input[type=button]{
+       width: 270px;
+       padding: 12px 20px;
+       margin: 8px 0;
+       box-sizing: border-box;
+       border: 1px solid #f0f;
+       outline: none;
+       background-color: blue;
+   	}
+</style>
+<script type="text/javascript">
+    function signin(){
+        let url ="welcome.html";
+           window.open(url); 
+       }
+       const pwd = document.getElementById("p1");
+        const chk=document.getElementById("chk1");
+
+          chk.onchange=function(e){
+            p1.type = chk.checked ? "text" : "password";
+          };
+</script>
+</body>
+</html>

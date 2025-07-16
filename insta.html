@@ -1,0 +1,125 @@
+<html>
+<head>
+  <link rel="shortcut icon" type="x-icon" href="instagram.png">
+  <title>Instagram</title>
+</head>
+<body background="login.jpg">
+<center>
+	<div>
+	<form>
+	<select>
+		<option>English(United States)</option>
+		<option>Hindi</option>
+		<option>Marathi</option>
+    </select>
+    </form>
+    <br><br><br><br><br><br>
+    <i><h1>Instagram</h1></i>
+   <form>
+   	<input type="text" id="n1" placeholder="Phone number,email or username"><br>
+   	<input type="password" id="p1" placeholder="Password">
+    <span id="btn" class="btn">
+    <input type="checkbox" onclick="if(p1.type=='text')p1.type='password'; else p1.type='text';"><label><i><b>Show</b></i></label>
+  </span>
+   	<input type="button" value="Login" onclick="login()">
+   </form> 
+   <h5>Forget your login details?Get help logging in.</h5>
+   <h6>----------------------------------OR---------------------------------</h6>
+   <a href="https://www.facebook.com/login.php"><h4>Login in with Facebook</h4></a>
+   <hr>
+   <a href="1st sign in.html"><h5>Don't have an account?Sign up</h5></a>
+   </div>
+ </center>
+   <style>
+
+   	div{
+   		background-color: black;
+   		width: 300px;
+   		border: 15px;
+        padding: 30px;
+        margin: 20px;
+        box-shadow: 1px 1px #444;
+        animation-name: ex2;
+  animation-duration: 3s;
+  animation-iteration-count: 1; 
+   	}
+   	input[type=text]{
+       width: 270px;
+       padding: 12px 20px;
+       margin: 8px 0;
+       box-sizing: border-box;
+       border: 1px solid #f0f;
+       outline: none;
+   	}
+   	input[type=password]{
+       width: 270px;
+       padding: 12px 20px;
+       margin: 8px 0;
+       box-sizing: border-box;
+       border: 1px solid #f0f;
+       outline: none;
+       color: #555;
+   	}
+   		input[type=button]{
+       width: 270px;
+       padding: 2px 2px;
+       margin: 8px 0px;
+       box-sizing: border-box;
+       border: 1px solid #f0f;
+       outline: none;
+       background-color: blue;
+       border-radius: 5%;
+       height: 30px;
+       text-align: center;
+   	}
+   	h5{
+      color: #555;
+   	}
+   	h6{
+      color: #fff;
+   	}
+   	h4{
+   		color: #00f;
+   	}
+    label{
+      color: white;
+    }
+    .text-container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.btn {
+  position: absolute;
+  top: 350px;
+  right: 650px;
+}
+label{
+      color: #000;
+        padding: 5px 3px;
+       margin: 5px 0;
+       box-sizing: border-box;
+       outline: none;
+    }
+    h1{
+      color:blue;
+    }
+
+   </style>
+   <script type="text/javascript">
+   	function login()
+      {
+        let i=document.getElementById("n1");
+        let j=document.getElementById("p1");
+        if(i.value=="chinmay1866__joshi"&& j.value=="734873")
+         {
+           let url = "https://www.instagram.com/";
+           window.open(url);        
+         }
+         else{ 
+         	alert("Enter Valid Username Password")
+         }
+          }
+   </script>
+</body>
+</html>
